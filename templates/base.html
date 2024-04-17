@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--<title>Shooes'Shop</title>-->
+</head>	
+<body>
+	<a href="{% url 'index' %}">
+		<h1>Shoes'Shop</h1>
+	</a>
+	{% if user.is_authenticated %}
+		{{ user.username }}
+		<a href="{% url 'logout' %}">Deconnexion</a>
+	{% else %}
+		<a href="{% url 'login' %}">Connexion</a>
+		<a href="{% url 'signup' %}">S'inscrire</a>
+	{% endif %}
+	
+{% block content %}
+{% endblock %}
+</body>
+</html>
