@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/mnt/nfs/homes/bfiguet/Desktop/siteE-commerce/env"
+VIRTUAL_ENV="/mnt/nfs/homes/bfiguet/Desktop/site_E-Commerce/env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
