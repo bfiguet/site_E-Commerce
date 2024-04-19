@@ -15,6 +15,10 @@
 		<a href="{% url 'login' %}">Connexion</a>
 		<a href="{% url 'signup' %}">S'inscrire</a>
 	{% endif %}
+
+	<p>
+		<a href="{% url 'cart' %}">Voir le Panier ({{ user.cart.orders.count }})</a>
+	</p>
 	
 {% block content %}
 {% endblock %}
