@@ -8,6 +8,8 @@ source env/bin/activate // activate virtual env
 
 pip install Pillow // install pillow for db
 
+pip install django // install django
+
 pip freeze > requirements.txt // 
 
 python manage.py startapp accounts // create neaw app
