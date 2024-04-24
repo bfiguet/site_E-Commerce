@@ -4,6 +4,8 @@ https://www.youtube.com/watch?v=odIR-00ggVI&ab_channel=Docstring
 
 python -m venv env //create virtual env
 
+source env/bin/activate // activate virtual env
+
 pip install Pillow // install pillow for db
 
 pip freeze > requirements.txt // 
